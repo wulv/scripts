@@ -34,9 +34,3 @@ for database in ${databases[@]}
         echo 'delete 10 days ago backup '$backupDir/$database-$timeTenDayAgo.sql.gz
     fi
   done
-
-  # 执行：bash mysql_backup.sh
-  # 定时：touch rootcorn 
-  # vim rootcorn
-  # 0 13 * * * /bin/bash /mysql_backup.sh
-  # crontab rootcorn
