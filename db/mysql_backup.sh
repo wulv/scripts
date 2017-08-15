@@ -36,5 +36,7 @@ for database in ${databases[@]}
   done
 
   # 执行：bash mysql_backup.sh
-  # 定时：crontab –e
-  # 013* * * * /mysql_backup.sh
+  # 定时：touch rootcorn 
+  # vim rootcorn
+  # 0 13 * * * /bin/bash /mysql_backup.sh
+  # crontab rootcorn
